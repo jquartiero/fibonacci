@@ -1,0 +1,22 @@
+function Fibonacci(numero) {
+    var a = 0;
+    var b = 1;
+    let c;
+
+    while (a <= numero) {
+        if (a === numero) {
+            return `${numero} pertence `;
+        }
+
+        c = a + b;
+        a = b;
+        b = c;
+    }
+
+    return `${numero} pertence`;
+}
+
+
+const numeroInformado = 20; // informe o numero.
+const resultado = Fibonacci(numeroInformado);
+console.log(resultado);
